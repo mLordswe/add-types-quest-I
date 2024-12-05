@@ -10,8 +10,8 @@ import {
 import { commonColor, numberOfColors } from "./func/dog";
 
 // Fixa så funktionen gör det den ska
-const printSum = (a, b) => {
-	console.log(0);
+const printSum = (a: number, b: number) => {
+	console.log(a + b);
 };
 
 printSum(1, 2);
@@ -53,7 +53,7 @@ console.log(
 // skriv ut "Den personen med flest hobbies har Y stycken hobbies". Byt ut Y mot ett funktionsanrop. Skapa den funktionen.
 // skriv ut "Den äldsta personen är A och den yngsta är B". Byt ut A och B mot funktionsanrop. Ska de två funktionerna
 
-const dogs = [
+export const dogs = [
 	{ name: "Nisse", color: "brown" },
 	{ name: "Fiffi", color: "white" },
 	{ name: "Fluffe", color: "black" },
@@ -64,6 +64,7 @@ const dogs = [
 	{ name: "Benny", color: "brown" },
 	{ name: "Krister", color: "brown" },
 ];
+
 
 console.log(`Vi har ${dogs.length} stycken hundar.`);
 console.log(`Hundarna har ${numberOfColors(dogs)} antal unika färger.`);

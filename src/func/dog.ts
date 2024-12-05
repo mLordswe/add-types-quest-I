@@ -1,3 +1,13 @@
-export const numberOfColors = (d) => {};
 
-export const commonColor = (d) => {};
+export const numberOfColors = (d: []) => {
+    let sumColors = d.length;
+    
+    
+    return sumColors
+};
+
+export const commonColor = (d: []) => {
+    
+        
+    
+};
