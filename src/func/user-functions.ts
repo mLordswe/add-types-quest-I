@@ -44,12 +44,12 @@ export const oldestPerson = (allUsers: Person[]) => {
 //*************TODO få denna att fungera***************
 //*****************************************************
 export const mostHobbies = (allUsers: Person[]) => {
-  let hobbies: any;
+  let hobbies: Person[];
   let hobbyamount: any[] = [];
   allUsers.forEach((u) => {
     hobbyamount.push(u.hobby.length);
   });
-  hobbyamount.sort((a, b) => b - a).splice(1, hobbyamount.length);
+  hobbies = hobbyamount.sort((a, b) => b - a).splice(1, hobbyamount.length);
 
   return console.log(hobbyamount);
 };
