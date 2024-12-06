@@ -43,16 +43,13 @@ export const oldestPerson = (allUsers: Person[]) => {
 
 //*************TODO få denna att fungera***************
 //*****************************************************
-// export const mostHobbies = (allUsers: Person[]) => {
-//   let hobbies: any;
-//   let hobbyamount: any[] = [];
-//   allUsers.forEach((u) => {
-//     hobbyamount.push(u.hobby);
-//     if (u.hobby.length > Math.max(u.hobby.length)) {
-//       hobbyamount.filter(String);
-//       console.log(hobbies.sort().pop());
-//     }
-//   });
+export const mostHobbies = (allUsers: Person[]) => {
+  let hobbies: any;
+  let hobbyamount: any[] = [];
+  allUsers.forEach((u) => {
+    hobbyamount.push(u.hobby.length);
+  });
+  hobbyamount.sort((a, b) => b - a).splice(1, hobbyamount.length);
 
-//   return console.log(hobbies);
-// };
+  return console.log(hobbyamount);
+};

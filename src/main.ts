@@ -3,7 +3,7 @@ import {
   averageAge,
   averageNumberOfHobbies,
   Person,
-  //   mostHobbies,
+  mostHobbies,
   oldestPerson,
 } from "./func/user-functions";
 import {
@@ -56,7 +56,7 @@ console.log(`Medelåldern på alla användare är ${averageAge(arr)}`);
 console.log(
   `Medelantalet hobbies per användare är ${averageNumberOfHobbies(arr)}`
 );
-// console.log(` most hobbies${mostHobbies(arr)}`);
+console.log(` most hobbies${mostHobbies(arr)}`);
 oldestPerson(arr);
 
 // skriv ut "Den personen med flest hobbies har Y stycken hobbies". Byt ut Y mot ett funktionsanrop. Skapa den funktionen.
