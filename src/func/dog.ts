@@ -1,6 +1,6 @@
 import { dogs } from "../main";
 
-type Color = "black" | "white" | "beige" | "gray" | "brown";
+type Color = "black" | "white" | "beige" | "gray" | "brown" | "blue" | "green";
 export type Dog = {
   name: string;
   color: Color;
