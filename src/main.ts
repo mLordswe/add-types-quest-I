@@ -71,7 +71,10 @@ export const dogs: Dog[] = [
   { name: "Winter", color: "gray" },
   { name: "Rolf", color: "brown" },
   { name: "Benny", color: "brown" },
-  { name: "Krister", color: "brown" },
+  { name: "Krister", color: "gray" },
+  { name: "Krister", color: "gray" },
+  { name: "Krister", color: "gray" },
+  { name: "Krister", color: "gray" },
 ];
 
 console.log(`Vi har ${dogs.length} stycken hundar.`);
